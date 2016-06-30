@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio 4</title>
+<script>
+	function cambiarAtributos(){
+		document.getElementById('parrafo').style.fontSize="25px";
+		document.getElementById('parrafo').style.fontFamily="Arial";
+		document.getElementById('parrafo').style.backgroundColor= "#FF4466";
+		document.getElementById('parrafo').style.color = "#fff";
+		document.getElementById('parrafo').style.border="12px solid #000";
+		//document.getElementById('parrafo').innerHTML = "Esto es cambiar el texto"; con innerText tambien se cambia
+
+		var x = 5;
+		var y = 6;
+		var z = x + y
+		document.getElementById("parrafo").innerHTML = z;
+	}
+</script>
+</head>
+<body>
+	<p id="parrafo">
+		Esto es un ejemplo de un parrafo
+	</p>
+	<script>
+		cambiarAtributos();
+	</script>
+</body>
+</html>
