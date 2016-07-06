@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Gradients</title>
+<style>
+	.venezuela{
+		width:800px;
+		height:500px;
+		margin:auto;
+		position: relative;
+		background-image:url(escudo.png),
+		linear-gradient(
+			    180deg,
+			    yellow 10%,
+			    yellow 30%,
+	            blue 10%,
+	            blue 65%,
+	            red 10%
+			);
+		background-size:100px 100px, 800px 500px;
+		background-repeat:no-repeat;
+		background-position:20px 20px, center;
+	}
+
+	/*span{
+		position:relative;
+		top:240px;
+		left:30px;
+		font-size:4.2em;
+		color:#fff;
+		text-shadow:30px -50px  #fff;
+	}*/
+
+	.venezuela::before{
+		content:"\2605";
+		position: relative;
+		top:258px;
+		left:215px;
+		color:#fff;
+		font-size:3.5em;
+		text-shadow:26px -50px,
+					70px -79px,
+					120px -98px,
+					173px -100px,
+					223px  -79px,
+					264px  -47px,
+					288px  -4px;
+	}
+	
+	.chile{
+		width:800px;
+		height:500px;
+		margin:50px auto;
+		border:1px solid #ccc;
+		position:relative;
+		background-image:linear-gradient(
+			     		90deg,
+			             #0035AD 35%, 
+			             transparent 35%
+			             ),
+						 linear-gradient(
+							white 50%, 
+							#D42E12 50%
+						);
+		background-size:100% 50%, auto;
+		background-repeat:no-repeat;
+	}
+
+	.chile::before{
+		content:"\2605";
+		font-size:13em;
+		position:absolute;
+		left:7%;
+		top:1%;
+		transform:translate(-7%, -1%);
+		color:#fff;
+	}
+</style>
+</head>
+<body>
+	<div class="venezuela">
+		<!--<span>&#9733;</span>-->
+	</div>
+	<div class="chile"></div>
+</body>
+</html>
