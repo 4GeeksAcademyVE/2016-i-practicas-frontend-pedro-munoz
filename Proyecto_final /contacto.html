@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Contacto</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/contacto.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700,400italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="minimal.css">
+	<link rel="stylesheet" href="alertifyjs/css/alertify.min.css">
+	<link rel="stylesheet" href="alertifyjs/css/themes/default.min.css">
+</head>
+<body>
+	<nav class="nav navbar menu">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand link" href="inicio.html">WebDesing</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li></i><a href="inicio.html" class="link"><i class="icon-inicio"></i>Inicio</a></li>
+				<li></i><a href="acerca.html" class="link"><i class="icon-acerca"></i>Acerca de</a></li>
+				<li></i><a href="contacto.html" class="link"><i class="icon-contacto"></i>Contacto</a></li>
+			</ul>
+		</div>
+	</nav>
+	
+	<div class="container formulario">
+		<div class="col-md-10 col-md-offset-2">
+			<h2>Envia tus Datos</h2>
+		</div>
+		<form class="form-horizontal">
+			<div class="form-group">
+				<label for="nombre" class="control-label col-md-2">Nombre:</label>
+				<div class="col-md-10">
+					<input type="text" class="form-control" id="nombre">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="apellido" class="control-label col-md-2">Apellido:</label>
+				<div class="col-md-10">
+					<input type="text" class="form-control" id="apellido">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="email" class="control-label col-md-2">Email:</label>
+				<div class="col-md-10">
+					<input type="email" class="form-control" id="email" required="">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="empresa" class="control-label col-md-2">Empresa:</label>
+				<div class="col-md-10">
+					<input type="text" class="form-control" id="empresa">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="option" class="col-md-2 control-label">Elige tu pais:</label>
+					<div class="col-md-10">
+						<select class="form-control" name="pais" id="option">
+							<option value="AF">Argentina</option>
+							<option value="AL">Bolivia</option>
+							<option value="DE">Brasil</option>
+							<option value="AD">Colombia</option>
+							<option value="AO">Chile</option>
+							<option value="AI">Ecuador</option>
+							<option value="AQ">Peru</option>
+							<option value="AG">Uruguay</option>
+							<option value="AN">Venezuela</option>
+						</select>
+					</div>
+			</div>
+			<div class="form-group">
+				<label for="postal" class="col-md-2 control-label">Codigo Postal:</label>
+				<div class="col-md-10">
+					<input type="number" class="form-control" id="postal" min="1000">
+				</div>
+			</div>
+				<input type="submit" class="btn btn-primary col-md-10 col-md-offset-2" id="comprobar">
+		</form>
+	</div>
+
+	<div class="container contacto__informacion">
+		<div class="row">
+			<section class="col-md-4 items">
+				<span class="icon-bubbles"></span>
+				<h2>Asesoramiento</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit repellat incidunt dolorum quia dolore sed animi, adipisci reprehenderit! Dignissimos temporibus dolor, in nobis. Recusandae qui quas doloribus distinctio impedit iure!</p>
+			</section>
+			<section class="col-md-4 items">
+				<span class="icon-css3"></span>
+				<h2>Tecnologias</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam veritatis quibusdam maxime placeat in expedita harum provident fugit porro, eius assumenda odio, cum deleniti temporibus accusamus, nisi eum, eligendi quod?</p>
+			</section>
+			<section class="col-md-4 items">
+				<span class="icon-git"></span>
+				<h2>Contribuciones</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo enim officia at alias quaerat quidem consequatur, voluptatibus reprehenderit fugiat nam dolor, voluptas eius assumenda, repellat unde cum, optio modi. Veritatis.</p>
+			</section>
+		</div>
+	</div>
+
+	
+	<footer class="col-md-12">
+		<a href="inicio.html" class="footer__link"><i class="icon-inicio"></i>Inicio</a>
+		<a href="acerca.html" class="footer__link"><i class="icon-acerca"></i>Acerca de</a>
+		<a href="contacto.html" class="footer__link"><i class="icon-contacto"></i>Contacto</a>
+	</footer>
+
+
+<script src="js/jquery-3.0.0.min.js"></script>
+<script src="pace.min.js"></script>
+<script src="alertify.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

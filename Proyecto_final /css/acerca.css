@@ -1,0 +1,127 @@
+@font-face{
+	font-family:"lobster";
+	src:url(../fuentes/lobster/Lobster1.4.otf);
+}
+ 	
+body{
+	background:url(../img/skulls.png);
+}
+
+.menu{
+	background:#009688;
+}
+
+.menu .link{
+	display:block;	
+	padding:30px;
+}
+
+.menu .navbar-header .link{
+	color:#fff;
+	font-family:"lobster";
+	font-size:2em;
+	vertical-align:middle;
+}
+
+.menu .navbar-nav .link i{
+	position:relative;
+	right:5px;
+	color:#000;
+}
+
+.menu ul{
+	position: relative;
+	top:3px;
+	transform:translateY(-3px);
+}
+
+.menu .navbar-nav .link{
+	color:#fff;
+	transition:.6s all;
+	vertical-align:middle;
+	font-family:'Roboto Condensed', sans-serif;
+}
+
+.menu .navbar-nav .link:hover{
+	background:none;
+	box-shadow:0px 200px #820020 inset;
+	color:#000;
+}
+
+
+.bx-wrapper{
+	width:60%;
+}
+
+.bx-wrapper .bx-prev {
+	display:none;
+}
+
+.bx-wrapper .bx-next {
+	display:none;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a{
+	display:none;
+}
+
+.container .carousel li img{
+	margin:auto;
+}
+
+
+.container .lateral h2{
+	text-align:center;
+	font-family:"lobster";
+}
+
+.container .lateral p{
+	font-family: 'Roboto Condensed', sans-serif;
+	text-align:justify;
+}
+
+.container .contenido h2{
+	text-align:center;
+	font-family:"lobster";
+}
+
+.container .contenido p{
+	text-align:justify;
+	font-family:"Roboto Condensed", sans-serif;
+}
+
+.container .carousel h2{
+	font-family:'lobster';
+}
+
+footer{
+	background:#009688;
+	padding:2em 2em;
+	text-align:center;
+	position:relative;
+	top:130px;
+}
+
+footer .footer__link{
+	color:#fff;
+	text-decoration:none;
+	background:#E53935;
+	display:inline-block;
+	width:150px;
+	padding:1em 1em;
+	vertical-align:middle;
+	transition:.5s all;
+	border-radius:.4em;
+	font-family:'Roboto Condensed', sans-serif;
+}
+
+footer .footer__link i{
+	position: relative;
+	right:3px;
+	color:#000;
+}
+
+footer .footer__link:hover{
+	/*background:rgba(229,57,53,.9);*/
+	box-shadow:-1px -1px 2px #eee inset;
+}
