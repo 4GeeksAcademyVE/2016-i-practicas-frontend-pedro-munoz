@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ajax</title>
+	<script src="js/jquery-3.1.0.min.js"></script>
+</head>
+<body>
+	<button type="button">Click</button>
+	<div id="contenido"></div>
+<script>
+	$(document).ready(function(){
+
+		$("button").on('click',function(){
+
+			$.ajax({
+				url: "otro.html",
+				dataType: "text",
+				success: function(data){
+					$("#contenido").html(data);
+				}
+			});	
+
+		});
+
+	});
+</script>
+</body>
+</html>

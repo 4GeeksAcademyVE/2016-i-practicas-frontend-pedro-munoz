@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Practica Json</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <script>
+      var text = '{"nombre":"Pedro","Calle":"los Cortijos Av. Principal","telefono":"0234 34343434"}';
+      var obj = JSON.parse(text);
+
+     //el tipo de Mime para texto json es "application/json"
+
+
+      document.getElementById("demo").innerHTML =
+      obj.nombre + "<br>"+
+      obj.Calle + "<br>" +
+      obj.telefono;
+    </script>
+  </body>
+</html>

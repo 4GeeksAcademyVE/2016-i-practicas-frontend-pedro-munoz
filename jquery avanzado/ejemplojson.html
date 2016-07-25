@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="js/jquery-3.1.0.min.js"></script>
+</head>
+<body>
+<!---<ul class="datos"></ul>-->
+<select name="opciones" id="opciones" class="sele"></select>
+
+
+	<script>
+		$.ajax({
+			url:"cargar.json",
+			dataType:"json",
+			success: function(data){
+				//alert("Mi objeto Json: " + data);
+				$.each(data, function (key,val){
+				 	//$('.datos').append("<li>"+key + "="+ val+"</li>")
+				 	$('.sele').append("<option value='"+ val + "'>" + key + "</option>");
+				});
+			}
+		});
+
+		$(".sele").on('change',function(){
+			alert($(this).val());
+		});
+	</script>
+</body>
+</html>

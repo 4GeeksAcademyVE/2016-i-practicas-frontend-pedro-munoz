@@ -1,0 +1,19 @@
+/*{
+	"Venezuela": "Caracas",
+	"Colombia":"Bogota",
+	"Brasil":"Brasilia"
+}*/
+
+{
+	"Paises":[
+		{
+			"Venezuela":[
+				{"Ciudades":[
+					"Caracas","Valencia","Maracaibo"
+
+				]}
+
+			]
+	}]
+		
+}
